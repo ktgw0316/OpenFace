@@ -87,7 +87,7 @@ cd dlib-19.22
 mkdir -p build
 cd build
 echo "Installing dlib"
-cmake ..
+cmake -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
 cmake --build . --config Release
 sudo make install
 sudo ldconfig
